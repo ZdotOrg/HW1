@@ -1,0 +1,165 @@
+<!-- About Me, Hobbies & Interests -->
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <!-- fix hierarchy -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            .course-item {
+             margin-bottom: 1.5rem;
+             padding-bottom: 1.5rem;
+                border-bottom: 1px solid #ccc;   
+            }
+
+            .course-item:last-child{
+                border-bottom: none;
+            }
+            .course-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0.5rem;
+            }
+            .course-title{
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+            .course-status{
+                padding: 0.25rem 0.5rem;
+                border-radius: 5px;
+                font-size: 0.875rem;
+                font-weight: bold;
+                color: #fff;
+            }
+            .status-pending{
+                background-color: #f39c12;
+                color: red
+            }
+            .status-progress{
+                background-color: #3498db;
+                color: blue
+            }
+            .status-completed{
+                background-color: #2ecc71;
+                color: green
+            }
+            .course-description{
+                color:aqua;
+                font-size: .95rem;
+                margin-bottom: 0.5rem;
+            }
+            .due_date{
+                font-style: italic;
+                font-size: 0.875rem;
+                color: #666;
+            }
+            .assignment-list{  
+                margin-top: 1rem;
+                padding-left: 1.25rem;
+            }
+            .assignment-list li{
+                margin-bottom: 0.5rem;
+                color: darkmagenta;
+            }
+</style>
+</head>
+    <body>
+        <header>
+            <h1>About Me</h1>
+            <!--NAVIGATION PAGE-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="coursework.html">Coursework</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <section id="coursework-tracker">
+            <h2>Coursework Tracker</h2>
+            
+            <div class="course-item">
+                <div class="course-header">
+                    <h3 class="course-title">Web Development 101</h3>
+                    <span class="course-status status-progress">In Progress</span>
+                </div>
+                <p class="course-details">
+                    Instructor: Dr. Jane Smith | 
+                    <span class="due-date">Due: March 15, 2024</span>
+                </p>
+                <p>Building a responsive portfolio website using HTML, CSS, and JavaScript.</p>
+                <ul class="assignment-list">
+                    <li>✓ HTML structure completed</li>
+                    <li>✓ CSS styling applied</li>
+                    <li>⚠ JavaScript interactivity - in progress</li>
+                    <li>☐ Final testing and deployment</li>
+                </ul>
+            </div>
+
+            <div class="course-item">
+                <div class="course-header">
+                    <h3 class="course-title">Database Management Systems</h3>
+                    <span class="course-status status-pending">Pending</span>
+                </div>
+                <p class="course-details">
+                    Instructor: Prof. Michael Johnson | 
+                    <span class="due-date">Due: March 30, 2024</span>
+                </p>
+                <p>Design and implement a relational database for a library management system.</p>
+                <ul class="assignment-list">
+                    <li>☐ ER diagram design</li>
+                    <li>☐ Database normalization</li>
+                    <li>☐ SQL queries implementation</li>
+                    <li>☐ Documentation</li>
+                </ul>
+            </div>
+
+            <div class="course-item">
+                <div class="course-header">
+                    <h3 class="course-title">Data Structures & Algorithms</h3>
+                    <span class="course-status status-completed">Completed</span>
+                </div>
+                <p class="course-details">
+                    Instructor: Dr. Sarah Lee | 
+                    <span class="due-date">Submitted: February 28, 2024</span>
+                </p>
+                <p>Implement sorting algorithms and analyze their time complexity.</p>
+                <ul class="assignment-list">
+                    <li>✓ Quick Sort implementation</li>
+                    <li>✓ Merge Sort implementation</li>
+                    <li>✓ Performance analysis report</li>
+                    <li>✓ Final presentation</li>
+                </ul>
+            </div>
+
+            <div class="course-item">
+                <div class="course-header">
+                    <h3 class="course-title">Mobile App Development</h3>
+                    <span class="course-status status-progress">In Progress</span>
+                </div>
+                <p class="course-details">
+                    Instructor: Prof. David Chen | 
+                    <span class="due-date">Due: April 10, 2024</span>
+                </p>
+                <p>Create a fitness tracking mobile application with user authentication.</p>
+                <ul class="assignment-list">
+                    <li>✓ UI/UX wireframes</li>
+                    <li>✓ User authentication module</li>
+                    <li>⚠ Activity tracking feature - in progress</li>
+                    <li>☐ Data visualization dashboard</li>
+                    <li>☐ Testing and bug fixes</li>
+                </ul>
+            </div>
+            </section>
+        </main>
+
+        <footer>
+        <p>&copy; 2024 Academic Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>
